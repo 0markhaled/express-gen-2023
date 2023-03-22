@@ -3,8 +3,15 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {   //each rout is used by adding "/" after the localhost:9000
-  res.render('index', { title: 'Omar', name: 'bob' });
+  res.render('index', {
+    title: 'my site',
+    name: req.login.auth ? req.login.username : "guest"
+  });
 });
+
+
+
+
 router.get('/cats?mdogs', function (req, res, next) {
   res.render('index', { title: "cats", name: "josh" });
 });
