@@ -1,0 +1,14 @@
+<div class="photo-menu">
+
+    {{#each photos}}
+    {{!-- photos is a varible defined in the object in photo.js file --}}
+
+    <a href="/photo/{{photo_id}}">
+        <div class="photo-thumb" style="background-image: url('/images/gallery/{{filename}}')"> </div>
+
+
+    </a>
+
+    {{/each}}
+
+</div>

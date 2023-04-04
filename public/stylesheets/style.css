@@ -6,3 +6,35 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.gallery .gallery-photo {
+  max-width: 30%;
+  max-height: 30%;
+}
+
+.gallery .gallery-photo img {
+  width: 100%;
+
+}
+
+.gallery-menu {
+  display: flex;
+}
+
+.photo-thumb {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: no-repeat center;
+}
+
+.photo-menu {
+  display: flex;
+}

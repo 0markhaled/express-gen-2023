@@ -1,3 +1,14 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-<p> Hello, {{name}} </p>
+
+{{> menu}}
+
+{{#if login.loggedIn}}
+	<ul>
+		<li><a href="/{{key}}/edit">Edit</a></li>
+		<li><a href="/addpage">Add Page</a></li>
+
+	</ul>
+{{/if}}
+
+
+<p class="content">{{{content}}}</p>
